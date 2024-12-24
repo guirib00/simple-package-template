@@ -2,26 +2,30 @@
 
 Description. 
 The package package_name is used to:
-	- 
-	-
+	- Gerador de senhas.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install password_generator
 
 ```bash
-pip install package_name
+pip install password_generator_guirib00
 ```
 
 ## Usage
 
 ```python
-from package_name import file1_name
-file1_name.my_function()
+from password_generator_guirib00 import generator
+
+password = generator.generate_simple_password(10)
+print(password)
+
+password_complex = generator.generate_complex_password(16)
+print(password_complex)
 ```
 
 ## Author
-My_name
+guirib00
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
